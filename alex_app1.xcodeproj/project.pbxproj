@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B9B157815DE3A6E005C7F0A /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B9B157615DE3A6E005C7F0A /* blueButton.png */; };
+		8B9B157915DE3A6E005C7F0A /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B9B157715DE3A6E005C7F0A /* whiteButton.png */; };
 		8BA4DB1B15DCD74900FFB5C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA4DB1A15DCD74900FFB5C1 /* UIKit.framework */; };
 		8BA4DB1D15DCD74900FFB5C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA4DB1C15DCD74900FFB5C1 /* Foundation.framework */; };
 		8BA4DB1F15DCD74900FFB5C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA4DB1E15DCD74900FFB5C1 /* CoreGraphics.framework */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B9B157615DE3A6E005C7F0A /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueButton.png; path = Resources/blueButton.png; sourceTree = "<group>"; };
+		8B9B157715DE3A6E005C7F0A /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteButton.png; path = Resources/whiteButton.png; sourceTree = "<group>"; };
 		8BA4DB1615DCD74900FFB5C1 /* alex_app1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alex_app1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA4DB1A15DCD74900FFB5C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8BA4DB1C15DCD74900FFB5C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				8BA4DB3B15DCD87F00FFB5C1 /* DSC_0003.png */,
+				8B9B157615DE3A6E005C7F0A /* blueButton.png */,
+				8B9B157715DE3A6E005C7F0A /* whiteButton.png */,
 				8BA4DB3C15DCD87F00FFB5C1 /* DSC_0004.png */,
 				8BA4DB3D15DCD87F00FFB5C1 /* DSC_0032.png */,
 				8BA4DB3E15DCD87F00FFB5C1 /* DSC_0041.png */,
@@ -195,6 +201,8 @@
 				8BA4DB4A15DCD87F00FFB5C1 /* DSC_0055.png in Resources */,
 				8BA4DB4B15DCD87F00FFB5C1 /* DSC_0062.png in Resources */,
 				8BA4DB4C15DCD87F00FFB5C1 /* DSC_00511.png in Resources */,
+				8B9B157815DE3A6E005C7F0A /* blueButton.png in Resources */,
+				8B9B157915DE3A6E005C7F0A /* whiteButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,11 +308,13 @@
 		8BA4DB3915DCD74900FFB5C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "alex_app1/alex_app1-Prefix.pch";
 				INFOPLIST_FILE = "alex_app1/alex_app1-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -329,6 +339,7 @@
 				8BA4DB3915DCD74900FFB5C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
