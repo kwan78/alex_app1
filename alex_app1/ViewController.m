@@ -33,6 +33,7 @@
     UIImage *buttonImagePressed = [UIImage imageNamed:@"blueButton.png"];
     UIImage *stretchableButtonImagePressed = [buttonImagePressed stretchableImageWithLeftCapWidth:12 topCapHeight:0];
     [doSomethingButton setBackgroundImage:stretchableButtonImagePressed forState:UIControlStateHighlighted];
+
 }
 
 - (void)viewDidUnload
@@ -98,7 +99,7 @@
                           
     [actionSheet showInView:self.view];
 }
-                                  
+
                                   
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
     {
